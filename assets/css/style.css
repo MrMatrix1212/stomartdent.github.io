@@ -1,0 +1,554 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Основные стили */
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #4C5866;
+    background-color: rgb(209, 211, 214) !important;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Стили шапки */
+
+header {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.logo a {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: bold;
+}
+.banner  {
+ text-align: center;
+ padding-top: 50px ;
+}
+
+/* Стили главной секции */
+
+.hero {
+	background-image: url(assets/img/logo.png);
+	background-size: cover;
+	background-position: center center;
+	color: rgba(27, 25, 25, 0.973);
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+button {
+	background-color: #fff;
+	color: #333;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ccc;
+}
+
+/* Стили секции О нас */
+
+.about {
+	background-color: #11a5a6;
+	padding: 50px;
+	text-align: center;
+}
+
+.about h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 24px;
+}
+
+/* Стили секции Наши специалисты */
+
+.team {
+	background-color: rgb(209, 211, 214);
+	padding: 50px;
+	text-align: center;
+}
+
+.team h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.team-members {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.team-member {
+	flex-basis: 300px;
+	margin: 0 20px;
+	text-align: center;
+}
+
+.team-member img {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-member h3 {
+	font-size: 24px !important;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.team-member p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.doctor-card {
+	border: 1px solid rgb(49, 134, 212);
+	border-radius: 20px;
+	padding: 10px ;
+	margin: 30px;
+    display: flex;
+}
+
+.doctor-card img {
+    height: 400px;
+
+}
+
+.btn_doctor {
+    margin-left: 10%;
+	background-color: #007BFF; /* Цвет фона кнопки */
+	color: #fff; /* Цвет текста кнопки */
+	padding: 10px 20px; /* Внутренние отступы */
+	border-radius: 5px; /* Скругленные углы */
+	cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.text1{
+    margin-left: 50px;
+}
+
+/* Стили секции Контакты */
+
+.map {
+	background-color: #f5f5f5;
+	padding: 50px;
+	text-align: center;
+}
+
+.map h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.location {
+	margin-top: 30px;
+}
+
+/* Стили подвала */
+
+footer {
+	background-color: #11A5A6;
+	border-top: 1px solid rgb(231, 222, 222);
+	padding: 20px;
+	text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.call-back-card {
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #a19d9d;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Стили для всплывающего окна */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.overlay:target{
+	display: block;
+}
+
+.popup {
+    background-color: #07b1d7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для медиа-запросов (опционально) */
+
+@media (max-width: 768px) {
+    .call-back-card {
+        max-width: 90%;
+    }
+}
+
+/* Стили для вкладки "Отзывы" */
+#reviews {
+    padding: 20px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.review h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 30px 0 30px 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Стили для заголовка */
+header {
+    background-color: rgb(253, 251, 251);
+    color: #fff;
+    text-align: center; 
+}
+
+
+/* SDFSFSD*/
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.address {
+    margin-top: 20px;
+}
+
+.working-hours {
+    margin-top: 20px;
+}
+
+.contact-phones {
+    margin-top: 20px;
+}
+
+.vk-group {
+    margin-top: 20px;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+
+.copyright {
+    font-size: 12px;
+}
+
+
+/*header-selection*/
+
+/* Стили для хедера */
+#header-section {
+    background-color: #11a5a6;
+    color: rgb(36, 33, 33);
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    padding: 17px;
+}
+
+.header-logo a {
+    text-decoration: none;
+}
+
+.header-logo_img {
+    width: 150px;
+    margin-right: 700px;
+}
+
+.nav-main_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-main_item {
+    margin-right: 20px;
+}
+
+.nav-main_link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-main_link:hover {
+    color: #ff6600; /* Цвет при наведении */
+}
+
+.header_btn {
+    background-color: #ff6600; /* Цвет кнопки */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header_btn:hover {
+    background-color: #ff9900; /* Цвет кнопки при наведении */
+}
+
+/*BANNER*/
+/* Стили для основного контейнера */
+.mainscreen-slider-item__bg_1 {
+    padding-top: 100px;
+	background-image: url('../img/slide.png');
+    background-size: cover ;height: 700px;
+	width: 100vw;
+  }
+
+  .mainscreen-slider-item__bg_1 p{
+    height: auto;
+    width: 50%;
+    font-size: 40px;
+    padding-left: 10%;
+  
+  } 
+  /* Стили для контейнера с классом "container" */
+  .container {
+	height: 100%;
+  }
+  
+  /* Стили для строки с классом "row" */
+  .row {
+	height: 100%;
+  }
+  
+  /* Стили для колонки с классом "col-12" */
+  .col-12 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+  }
+  
+  /* Стили для обертки с классом "mainscreen__wrap" и "mainscreen__wrap_index" */
+  .mainscreen__wrap,
+  .mainscreen__wrap_index {
+	text-align: center;
+	color: #fff; /* Цвет текста */
+  }
+  
+  /* Стили для заголовка с классом "mainscreen__title" и "title-square_1" */
+  .mainscreen__title.title-square_1 {
+	font-size: 24px; /* Размер шрифта */
+	font-weight: bold; /* Полужирный шрифт */
+	margin-bottom: 10px; /* Отступ снизу */
+  }
+  
+  /* Стили для подзаголовка с классом "mainscreen__subtitle" */
+  .mainscreen__subtitle {
+	font-size: 18px; /* Размер шрифта */
+	margin-bottom: 20px; /* Отступ снизу */
+  }
+  
+  /* Стили для кнопки с классом "custom-btn" и "custom-btn_fill" */
+  .custom-btn.custom-btn_fill {
+    margin-left: 10%;
+	background-color: #007BFF; /* Цвет фона кнопки */
+	color: #fff; /* Цвет текста кнопки */
+	padding: 10px 20px; /* Внутренние отступы */
+	border-radius: 5px; /* Скругленные углы */
+	cursor: pointer; /* Изменение курсора при наведении */
+    width: fit-content;
+  }
+  
+  /* Дополнительные стили или правила могут быть добавлены по необходимости */
+
+
+/*Specialisty*/
+
+
+
+
+
+html, body {
+    width: 100%;
+    font-family: "Mulish",sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    background-color: #fff;
+    color: #383838;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html:not(.bvi-panel) {
+    font-size: 100%;
+}
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
